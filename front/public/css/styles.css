@@ -1,0 +1,66 @@
+/* Định dạng toàn bộ trang */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('/public/img/chesspieces/wikipedia/background.jpg'); /* Đường dẫn đến hình ảnh nền */
+    background-size: cover; 
+    font-family: Arial, sans-serif;
+}
+
+/* Định dạng khung sườn trung tâm */
+.container {
+    max-width: 400px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Độ trong suốt của container */
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative; /* Để chữ "Game Code" nằm giữa */
+}
+
+/* Định dạng tiêu đề */
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Định dạng ô textbox */
+input[type="text"] {
+    padding: 10px;
+    border: 2px solid #333;
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+/* Định dạng nút "Tạo phòng" và "Tham gia phòng" */
+button#createGame,
+button#joinGame {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* Định dạng nút "Tạo phòng" khi hover */
+button#createGame:hover {
+    background-color: #45a049;
+}
+
+/* Định dạng nút "Tham gia phòng" khi hover */
+button#joinGame:hover {
+    background-color: #357a38;
+}
+
+/* Định dạng thông báo lỗi */
+#errorMessage {
+    color: red;
+}

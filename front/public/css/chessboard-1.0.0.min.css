@@ -1,0 +1,60 @@
+/* Clearfix */
+.clearfix-7da63 {
+    clear: both;
+}
+
+/* Chessboard */
+.board-b72b1 {
+    border: 2px solid #404040;
+    box-sizing: content-box;
+}
+
+/* Chessboard Squares */
+.square-55d63 {
+    float: left;
+    position: relative;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* White Squares */
+.white-1e1d7 {
+    background-color: #f0d9b5;
+    color: #b58863;
+}
+
+/* Black Squares */
+.black-3c85d {
+    background-color: #b58863;
+    color: #f0d9b5;
+}
+
+/* Square Highlights */
+.highlight1-32417,
+.highlight2-9c5d2 {
+    box-shadow: inset 0 0 3px 3px #ff0;
+}
+
+/* Chess Notations */
+.notation-322f9 {
+    cursor: default;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    position: absolute;
+}
+
+/* Alpha Notations (a-h) */
+.alpha-d2270 {
+    bottom: 1px;
+    right: 3px;
+}
+
+/* Numeric Notations (1-8) */
+.numeric-fc462 {
+    top: 2px;
+    left: 2px;
+}

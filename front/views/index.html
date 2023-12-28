@@ -1,0 +1,30 @@
+<html lang="en">
+<head>    
+    {{> head }}
+    
+    <title>Game Code</title>
+</head>
+<body>
+    
+    <div class="container"> 
+        <h2>Game Code</h2>
+        <input type="text" id="codeInput" placeholder="Nhập mã của bạn">
+        <button id="createGame">Tạo phòng</button>
+        <button id="joinGame">Tham gia phòng</button>
+        <div style="color: red" id="errorMessage"></div>
+    </div>
+    <script>
+        $('#createGame').on('click', function() {
+            window.location.replace('/white?code=' + $('#codeInput').val());
+        });
+        $('#joinGame').on('click', function() {
+            window.location.replace('/black?code=' + $('#codeInput').val());
+        });
+
+        var urlParams = new URLSearchParams(window.location.search);
+        if (urlParams.get('error') == 'invalidCode') {
+            $('#errorMessage').text('Mã mời không hợp lệ');
+        }
+    </script>
+</body>
+</html>
